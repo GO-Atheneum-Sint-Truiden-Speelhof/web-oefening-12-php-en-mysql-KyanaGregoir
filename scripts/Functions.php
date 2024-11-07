@@ -48,6 +48,37 @@ function SaveLogin()
     } else {
         echo "Error: " .$sql ."br" .$conn->error;
     }
+    
+}
+function Inschrijvingen()
+{
+    $servername = "localhost";
+    $username = "Test";
+    $password = "123";  
+    $dbname = "test";
+
+    $conn  = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+       return $conn;
+
+       $result = $conn->query($sql);
+
+        while($row = $result->fetch_row()) {
+
+           i
+
+            } else {
+        echo "Geen artikels gevonden in de databank";
+        }
+        $conn->close();
+
+}
+function Showlogin()
+{
+
 }
 
 ?>

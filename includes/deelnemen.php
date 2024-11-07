@@ -37,6 +37,7 @@
                 <br>
             <label for="fotoBeschrijving">Beschrijf je foto:</label><br>
                     <input type="textarea" id="fotoBeschrijving" name="fotoBeschrijving" rows="4" cols="25" required>
+                    
                     <input type="submit" id="deelnemen" value="deelnemen">
         </div>
     </form>
