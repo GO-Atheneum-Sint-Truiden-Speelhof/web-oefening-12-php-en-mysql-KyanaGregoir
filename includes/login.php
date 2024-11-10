@@ -1,17 +1,34 @@
+<?php include("scripts/Functions.php");
+
+if(isset($_POST['Username']) && !empty($_POST['Username'])){
+    login();
+} else {
+?>
 <div class="jumbotron">
-            <h1 class="display-4">Login</h1>
-            </div class="row">
-            <form method = "post" action = "begin.php?page=login">
-        <div class="left">
-                <label for="Username">Username:</label><br>
-                    <input type="text" id="Username" name="Username" required>
-                <br>
-            <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password" required>
-                 <br>
-                <br>
-                <input type="submit" id="login" value="login">
-        </div>
-    </form> 
+    <h1 class="display-4">Login pagina</h1>
 </div>
-        </div>
+<div class="row">
+    <div class="col-md-6">
+        <form action= "begin.php?page=login" method = "POST">
+            <div class="form-group row">
+                <div class="col">
+                    <label for="Username">Username:</label><br>
+                    <p><input type="text" id="Username" class="form-control" name="Username"></p>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col">
+                    <label for="Password">Password:</label><br>
+                    <p><input type="password" id="Password" class="form-control" name="Password"></p>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col">
+                    <button type="submit" id="loginButton">Login</button>                   
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<?php } ?>

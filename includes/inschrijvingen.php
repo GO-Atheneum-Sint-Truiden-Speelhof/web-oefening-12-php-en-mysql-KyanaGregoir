@@ -1,11 +1,14 @@
+<?php include("scripts/Functions.php"); ?>
 <div class="jumbotron">
             <h1 class="display-4">Inschrijvingen</h1>
             </div class="row">
             <form method = "post" action = "begin.php?page=inschrijvingen">
         <div class="left">
         <table class="table">
-            <tr>
-                <thead>
+            
+            
+        <thead>
+                <tr>
                     <th>ID</th>
                     <th>Naam</th>
                     <th>Adres</th>
@@ -18,20 +21,12 @@
                     <th>Camera</th>
                     <th>Lens</th>
                     <th>Beschrijving</th>
-                </thead>
-            </tr>
-                <tbody>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                    <?php
+                         ShowDB();
+                    ?>
                 </tbody>
         </table>
         </div>
