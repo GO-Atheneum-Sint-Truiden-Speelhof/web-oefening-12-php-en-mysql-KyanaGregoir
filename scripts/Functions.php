@@ -119,7 +119,7 @@ function login(){
     $result = $conn->query($sql);
 
     if($result->num_rows>0){
-        echo "<p>Login succes </p>";
+        echo "<p> Login succesvol geluk! </p>";
         header("refresh: 2 ; URL = begin.php?page=inschrijvingen");
 
     }

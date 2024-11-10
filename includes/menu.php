@@ -19,9 +19,7 @@
 					<li class="nav-item">
 						<a href="begin.php?page=login" class="nav-link">login</a>
 					</li>
-					<li class="nav-item">
-						<a href="begin.php?page=inschrijvingen" class="nav-link">inschrijvingen</a>
-					</li>
+					
 				</ul>
 			</div>
 			<button class="navbar-toggler" type="button"
